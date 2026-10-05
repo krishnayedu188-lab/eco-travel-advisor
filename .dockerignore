@@ -1,0 +1,11 @@
+.env
+.git/
+.idea/
+.rasa/
+models/
+models_split/
+train_test_split/
+handover_queue/
+.pytest_cache/
+__pycache__/
+results/

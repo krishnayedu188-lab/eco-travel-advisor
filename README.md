@@ -1,3 +1,11 @@
+---
+title: Eco-Travel Advisor
+emoji: 🌍
+colorFrom: green
+colorTo: blue
+sdk: docker
+app_port: 7860
+---
 # 🌍 Eco-Travel Advisor
 
 A Rasa chatbot that helps travellers plan lower-carbon trips. It compares the emissions of train, coach, car and flight, recommends transport and nearby hotels based on the user's sustainability preference, and hands complex requests to a human advisor with the full conversation context.

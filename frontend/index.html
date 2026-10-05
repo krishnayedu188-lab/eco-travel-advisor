@@ -95,7 +95,11 @@
   </div>
 
 <script>
-const RASA_URL = "http://localhost:5005/webhooks/rest/webhook";
+// Local development (page on port 3000) talks to Rasa directly; when deployed,
+// the page and the bot share one address, so a relative path is used.
+const RASA_URL = location.port === "3000"
+  ? "http://localhost:5005/webhooks/rest/webhook"
+  : "/webhooks/rest/webhook";
 const BAND_TEXT = { green: "Low emissions", amber: "Moderate emissions", red: "High emissions" };
 
 const log = document.getElementById("log");
