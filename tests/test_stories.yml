@@ -1,0 +1,110 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+version: "3.1"
+
+stories:
+- story: Greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Bot is honest that it is an AI
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: Happy path - full trip planned with buttons
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: plan_trip
+  - action: action_reset_trip
+  - action: trip_form
+  - active_loop: trip_form
+  - intent: inform
+    entities:
+    - city: Vienna
+  - action: trip_form
+  - intent: inform
+    entities:
+    - city: Berlin
+  - action: trip_form
+  - intent: inform
+  - action: trip_form
+  - intent: inform
+    entities:
+    - budget: "800"
+  - action: trip_form
+  - intent: inform
+    entities:
+    - sustainability_level: high
+  - action: trip_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_trip_summary
+  - action: action_calculate_carbon
+  - action: action_recommend_options
+
+- story: Destination given in the first message
+  steps:
+  - intent: plan_trip
+    entities:
+    - destination: Lisbon
+  - action: action_reset_trip
+  - action: trip_form
+  - active_loop: trip_form
+
+- story: Human request in the middle of the form stops the form
+  steps:
+  - intent: plan_trip
+  - action: action_reset_trip
+  - action: trip_form
+  - active_loop: trip_form
+  - intent: inform
+    entities:
+    - city: Vienna
+  - action: trip_form
+  - intent: request_human
+  - action: action_handover
+  - active_loop: null
+
+- story: Greeting in the middle of the form continues the form
+  steps:
+  - intent: plan_trip
+  - action: action_reset_trip
+  - action: trip_form
+  - active_loop: trip_form
+  - intent: greet
+  - action: utter_continue_trip
+  - action: trip_form
+  - active_loop: trip_form
+
+- story: Human request at the start
+  steps:
+  - intent: request_human
+  - action: action_handover
+  - active_loop: null
+
+- story: Out-of-scope message triggers the clarification fallback
+  steps:
+  - intent: out_of_scope
+  - action: action_default_fallback
+
+- story: Two misunderstandings in a row
+  steps:
+  - intent: out_of_scope
+  - action: action_default_fallback
+  - intent: out_of_scope
+  - action: action_default_fallback
+
+- story: Carbon offsets
+  steps:
+  - intent: ask_offsets
+  - action: action_offset_info
+
+- story: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

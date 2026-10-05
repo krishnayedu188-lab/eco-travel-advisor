@@ -1,0 +1,490 @@
+[
+  {
+    "text": "trip from Berlin to Prague",
+    "entities": [
+      {
+        "start": 10,
+        "end": 16,
+        "value": "Berlin",
+        "entity": "origin"
+      },
+      {
+        "start": 20,
+        "end": 26,
+        "value": "Prague",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.9117007851600647,
+        "value": "Berlin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Rome please",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Rome",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "destination",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9713373184204102,
+        "value": "Rome",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to go to Barcelona",
+    "entities": [
+      {
+        "start": 16,
+        "end": 25,
+        "value": "Barcelona",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "12 to 15 November",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "budget",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.5716130137443542,
+        "value": "12",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Vienna",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Vienna",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "destination",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.991294801235199,
+        "value": "Vienna",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "India",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "India",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "origin",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.884459376335144,
+        "value": "India",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "New York",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "New York",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Italy",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Italy",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Madrid",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Madrid",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I live in Bangalore",
+    "entities": [
+      {
+        "start": 10,
+        "end": 19,
+        "value": "Bangalore",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want to travel to Lisbon",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "Lisbon",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "plan a green trip to Vienna",
+    "entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "Vienna",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 21,
+        "end": 27,
+        "confidence_entity": 0.9473385214805603,
+        "value": "Vienna",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I'd like to visit Copenhagen sustainably",
+    "entities": [
+      {
+        "start": 18,
+        "end": 28,
+        "value": "Copenhagen",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm travelling from Hamburg",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "Hamburg",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "1000 euros max",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "1000",
+        "entity": "budget"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want the greenest option",
+    "entities": [
+      {
+        "start": 11,
+        "end": 19,
+        "value": "high",
+        "entity": "sustainability_level"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I don't mind emissions",
+    "entities": [
+      {
+        "start": 2,
+        "end": 12,
+        "value": "low",
+        "entity": "sustainability_level"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm coming from Munich",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "Munich",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "London",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "London",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Hamburg",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Hamburg",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Spain",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Spain",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tokyo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Tokyo",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "from India",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "India",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 5,
+        "end": 10,
+        "confidence_entity": 0.990991473197937,
+        "value": "India",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I'm going to Amsterdam",
+    "entities": [
+      {
+        "start": 13,
+        "end": 22,
+        "value": "Amsterdam",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Berlin",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Berlin",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "origin",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9728642106056213,
+        "value": "Berlin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "leaving from Cologne",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "Cologne",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "sustainability is very important to me",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "value": "high",
+        "entity": "sustainability_level"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "somewhat important",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "medium",
+        "entity": "sustainability_level"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "starting in Paris",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "Paris",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "this time I want to go to Rome",
+    "entities": [
+      {
+        "start": 26,
+        "end": 30,
+        "value": "Rome",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 26,
+        "end": 30,
+        "confidence_entity": 0.8516824245452881,
+        "value": "Rome",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Delhi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Delhi",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm based in Toronto",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "Toronto",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

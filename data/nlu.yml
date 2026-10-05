@@ -1,0 +1,158 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey there
+    - good morning
+    - hallo
+    - hey
+    - hi there
+    - good evening
+    - hello bot
+    - greetings
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - thanks, that's all
+    - see you
+    - thank you, bye
+    - I'm done
+    - cheers, bye
+    - ok thanks bye
+    - have a nice day
+
+
+- intent: plan_trip
+  examples: |
+    - plan a trip
+    - I want to go on holiday
+    - help me organise a trip
+    - can you plan my holiday
+    - I'm planning a city break
+    - I want to book a sustainable trip
+    - let's plan a journey
+    - I'd like to travel somewhere green
+    - find me an eco-friendly trip
+    - suggest a low-carbon holiday
+    - plan my weekend away
+    - I want to visit [Rome](destination) next month
+    - planning a trip to [Paris](destination)
+
+- intent: inform
+  examples: |
+    - [Paris](city)
+    - [Berlin](city)
+    - [Munich](city)
+    - [Rome](city) please
+    - I'm travelling from [Hamburg](origin)
+    - leaving from [Cologne](origin)
+    - I want to go to [Barcelona](destination)
+    - my budget is [500](budget) euros
+    - around [300](budget)
+    - [1000](budget) euros max
+    - I can spend [750](budget)
+    - next weekend
+    - 12 to 15 November
+    - I want the [greenest]{"entity": "sustainability_level", "value": "high"} option
+    - sustainability is [very important]{"entity": "sustainability_level", "value": "high"} to me
+    - [somewhat]{"entity": "sustainability_level", "value": "medium"} important
+    - I [don't mind]{"entity": "sustainability_level", "value": "low"} emissions
+    - this week
+    - this weekend
+    - next month
+    - in december
+    - early january
+    - tomorrow
+    - from 3 to 6 march
+    - 20 to 23 december
+    - the week after next
+    - sometime in spring
+    - I'm coming from [Munich](origin)
+    - starting in [Paris](origin)
+    - this time I want to go to [Rome](destination)
+    - [London](city)
+    - [Hamburg](city)
+    - [Vienna](city)
+    - [India](city)
+    - [Spain](city)
+    - [New York](city)
+    - [Tokyo](city)
+    - [Delhi](city)
+    - [Mumbai](city)
+    - [Italy](city)
+    - [Dubai](city)
+    - [Madrid](city)
+    - [Zurich](city)
+    - from [India](origin)
+    - I live in [Bangalore](origin)
+    - I'm based in [Toronto](origin)
+
+- intent: request_human
+  examples: |
+    - can I talk to a person?
+    - I want a human advisor
+    - connect me to a real agent
+    - this is too complicated, I need a person
+    - let me speak to someone
+    - I'd like to talk to a human advisor
+    - can a real person help me
+    - put me through to an agent
+    - I need human help
+    - is there a person I can speak to
+    - transfer me to a travel specialist
+    - I want to talk to someone real
+    - human please
+    - agent
+    - get me a human
+
+- intent: ask_offsets
+  examples: |
+    - what are carbon offsets
+    - carbon offsetting
+    - how can I compensate my carbon footprint
+    - offset options please
+    - tell me about offsetting
+    - which offset programme should I use
+
+- intent: out_of_scope
+  examples: |
+    - what time is it
+    - how old are you
+    - recommend a movie
+    - who is the president
+    - do you like music
+    - fix my computer
+    - bananas
+    - lorem ipsum
+    
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - am I talking to a human?
+    - are you a real person?
+    - is this an AI?
+    - are you a robot?
+
+- lookup: city
+  examples: |
+    - Amsterdam
+    - Barcelona
+    - Berlin
+    - Copenhagen
+    - Hamburg
+    - Lisbon
+    - London
+    - Munich
+    - Paris
+    - Prague
+    - Rome
+    - Vienna
+
+- regex: budget
+  examples: |
+    - \d{2,5}

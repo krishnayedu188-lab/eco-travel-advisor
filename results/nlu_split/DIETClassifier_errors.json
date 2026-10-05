@@ -1,0 +1,124 @@
+[
+  {
+    "text": "I want to travel to Lisbon",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "Lisbon",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "from 3 to 6 march",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "budget",
+        "start": 10,
+        "end": 11,
+        "confidence_entity": 0.500063419342041,
+        "value": "6",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Delhi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Delhi",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Vienna",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Vienna",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "destination",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9793829321861267,
+        "value": "Vienna",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I'm travelling from Hamburg",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "Hamburg",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.9410909414291382,
+        "value": "Hamburg",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Berlin",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Berlin",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "origin",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9878809452056885,
+        "value": "Berlin",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I'm based in Toronto",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "Toronto",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

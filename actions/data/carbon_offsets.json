@@ -1,0 +1,9 @@
+{
+  "_how_to": "Open each website before submission, confirm the details, and write the date in checked_on.",
+  "programmes": [
+    {"name": "atmosfair", "country": "Germany", "type": "emission-reduction projects", "standard": "Gold Standard projects", "url": "https://www.atmosfair.de", "checked_on": "2026-10-04"},
+    {"name": "myclimate", "country": "Switzerland", "type": "emission-reduction projects", "standard": "Gold Standard and other recognised standards", "url": "https://www.myclimate.org", "checked_on": "2026-10-04"},
+    {"name": "Gold Standard Marketplace", "country": "Switzerland", "type": "certified climate projects", "standard": "Gold Standard", "url": "https://www.goldstandard.org", "checked_on": "2026-10-04"},
+    {"name": "Climeworks", "country": "Switzerland", "type": "carbon removal (direct air capture)", "standard": "Puro Standard", "url": "https://climeworks.com", "checked_on": "2026-10-04"}
+  ]
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eco-Travel Advisor</title>
+  <style>
+    :root {
+      --bg: #f3f6f1; --panel: #ffffff; --ink: #1c2a21; --muted: #556458; --line: #d6e0d7;
+      --brand: #2d6a3e; --brand-ink: #ffffff; --user: #d9eedd;
+      --green: #1b6e34; --green-bg: #e2f3e6; --amber: #7a4f00; --amber-bg: #fff1cf;
+      --red: #9e2219; --red-bg: #fde3df; --focus: #1a5fb4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111713; --panel: #1a221c; --ink: #e6eee8; --muted: #a3b2a7; --line: #2e3b31;
+        --brand: #6bbb80; --brand-ink: #0c1810; --user: #243f2b;
+        --green: #86dc9c; --green-bg: #1b3622; --amber: #f3c55e; --amber-bg: #3a2f15;
+        --red: #ff9a90; --red-bg: #3f1f1b; --focus: #8ab4ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink);
+           font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .app { max-width: 780px; margin: 0 auto; height: 100vh; display: flex; flex-direction: column; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 12px;
+             padding: 12px 16px; background: var(--brand); color: var(--brand-ink); }
+    header h1 { margin: 0; font-size: 1.1rem; }
+    .status { font-size: .85rem; padding: 2px 10px; border-radius: 999px; background: rgba(255,255,255,.18); }
+    .handover { margin: 0; padding: 10px 16px; background: #1a4fa0; color: #fff; font-weight: 600; }
+    .log { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+    .msg { max-width: 85%; padding: 10px 14px; border-radius: 14px; white-space: pre-line;
+           background: var(--panel); border: 1px solid var(--line); }
+    .msg.user { align-self: flex-end; background: var(--user); }
+    .msg.error { border-color: var(--red); background: var(--red-bg); }
+    .quick { display: flex; flex-wrap: wrap; gap: 8px; }
+    button { font: inherit; cursor: pointer; }
+    .quick button { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--brand);
+                    background: var(--panel); color: var(--ink); }
+    .quick button:disabled { opacity: .45; cursor: default; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+    section.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+    section.panel h2 { font-size: 1rem; margin: 0 0 8px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+    .card { border-radius: 12px; padding: 10px 12px; border: 1px solid var(--line); border-left-width: 6px; }
+    .card h3 { margin: 0 0 4px; font-size: 1rem; }
+    .card .big { font-size: 1.25rem; font-weight: 700; margin: 0; }
+    .card p { margin: 2px 0; }
+    .small { font-size: .82rem; color: var(--muted); }
+    .band-green { border-left-color: var(--green); background: var(--green-bg); }
+    .band-amber { border-left-color: var(--amber); background: var(--amber-bg); }
+    .band-red   { border-left-color: var(--red);   background: var(--red-bg); }
+    .badge { display: inline-block; font-size: .8rem; font-weight: 600; padding: 1px 8px;
+             border-radius: 999px; border: 1px solid currentColor; }
+    .band-green .badge { color: var(--green); }
+    .band-amber .badge { color: var(--amber); }
+    .band-red .badge { color: var(--red); }
+    .carousel { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+    .carousel .card { flex: 0 0 230px; scroll-snap-align: start; background: var(--bg); border-left-color: var(--brand); }
+    .carousel .card.certified { border-left-color: var(--green); }
+    details { margin: 6px 0 10px; }
+    summary { cursor: pointer; color: var(--muted); font-size: .9rem; }
+    .typing { color: var(--muted); font-style: italic; padding: 0 16px 6px; }
+    form { display: flex; gap: 8px; padding: 12px 16px; border-top: 1px solid var(--line); background: var(--panel); }
+    input[type=text] { flex: 1; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line);
+                       background: var(--bg); color: var(--ink); font: inherit; }
+    form button { padding: 10px 16px; border-radius: 10px; border: 0; background: var(--brand); color: var(--brand-ink); }
+    footer { display: flex; justify-content: space-between; padding: 6px 16px 12px; font-size: .8rem;
+             color: var(--muted); background: var(--panel); }
+    footer button { background: none; border: 0; color: var(--muted); text-decoration: underline; padding: 0; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    a { color: var(--brand); }
+    .banner-btn { margin-left: 8px; background: #fff; color: #1a4fa0; border: 0; border-radius: 8px; padding: 4px 10px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🌍 Eco-Travel Advisor</h1>
+      <span id="status" class="status">🤖 Virtual assistant</span>
+    </header>
+    <p id="handover" class="handover" role="status" hidden></p>
+    <main id="log" class="log" role="log" aria-live="polite" aria-label="Conversation"></main>
+    <div id="typing" class="typing" hidden>Assistant is typing…</div>
+    <form id="composer">
+      <label for="msg" class="sr-only">Your message</label>
+      <input id="msg" type="text" autocomplete="off" placeholder="Type a message…">
+      <button id="mic" type="button" aria-label="Speak your message" aria-pressed="false" hidden>🎤</button>
+      <button type="submit">Send</button>
+    </form>
+    <footer>
+      <span id="latency"></span>
+      <button id="restart" type="button">Start over</button>
+    </footer>
+  </div>
+
+<script>
+const RASA_URL = "http://localhost:5005/webhooks/rest/webhook";
+const BAND_TEXT = { green: "Low emissions", amber: "Moderate emissions", red: "High emissions" };
+
+const log = document.getElementById("log");
+const input = document.getElementById("msg");
+const typing = document.getElementById("typing");
+const latency = document.getElementById("latency");
+const banner = document.getElementById("handover");
+const statusEl = document.getElementById("status");
+let senderId = crypto.randomUUID();  // anonymous session id - no personal data
+
+function el(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined && text !== null) node.textContent = text;  // textContent = safe from HTML injection
+  return node;
+}
+function add(node) { log.appendChild(node); log.scrollTop = log.scrollHeight; return node; }
+function bubble(text, who) { return add(el("div", `msg ${who}`, text)); }
+
+async function send(payload, shownText) {
+  if (payload === "/plan_trip") clearHandover();   // starting a new trip = back with the bot
+  if (shownText) bubble(shownText, "user");
+  log.querySelectorAll(".quick button").forEach(b => (b.disabled = true));
+  typing.hidden = false;
+  const start = performance.now();
+  try {
+    const res = await fetch(RASA_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sender: senderId, message: payload }),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const messages = await res.json();
+    const seconds = (performance.now() - start) / 1000;
+    latency.textContent = `Last reply: ${seconds.toFixed(1)} s`;   // evidence for the < 3 s requirement
+    console.log(`Response time: ${seconds.toFixed(2)} s`);
+    render(messages);
+  } catch (error) {
+    console.error(error);
+    bubble("Sorry, I can't reach the assistant right now. Please check that the Rasa server is running and try again.", "bot error");
+  } finally {
+    typing.hidden = true;
+    input.focus();
+  }
+}
+
+function render(messages) {
+  const types = new Set(messages.filter(m => m.custom).map(m => m.custom.type));
+  // The visual cards replace these plain-text lists, so don't show them twice
+  const shownAsCards = text =>
+    (types.has("carbon_cards") && text.startsWith("Estimated emissions")) ||
+    (types.has("hotel_carousel") && text.startsWith("Hotels within walking distance")) ||
+    (types.has("offsets") && text.startsWith("• "));
+  for (const m of messages) {
+    if (m.text && !shownAsCards(m.text)) bubble(m.text, "bot");
+    if (m.buttons && m.buttons.length) quickReplies(m.buttons);
+    if (m.custom) renderCustom(m.custom);
+  }
+}
+
+function quickReplies(buttons) {
+  const group = el("div", "quick");
+  group.setAttribute("role", "group");
+  group.setAttribute("aria-label", "Quick replies");
+  for (const b of buttons) {
+    const btn = el("button", "", b.title);
+    btn.type = "button";
+    btn.addEventListener("click", () => send(b.payload, b.title));
+    group.appendChild(btn);
+  }
+  add(group);
+}
+
+function renderCustom(data) {
+  if (data.type === "carbon_cards") carbonCards(data.options || []);
+  else if (data.type === "hotel_carousel") hotelCarousel(data);
+  else if (data.type === "offsets") offsetCards(data.programmes || []);
+  else if (data.type === "handover") showHandover(data);
+}
+
+function panel(title) {
+  const section = el("section", "panel");
+  section.setAttribute("aria-label", title);
+  section.appendChild(el("h2", "", title));
+  return section;
+}
+
+function carbonCards(options) {
+  const section = panel("Estimated CO₂e per person, one way");
+  const help = el("details");
+  help.appendChild(el("summary", "", "What do the colours mean?"));
+  help.appendChild(el("p", "small",
+    "Colours compare emissions per passenger-kilometre: green under 60 g, amber 60–140 g, red over 140 g. " +
+    "All figures are estimates; each card shows its data source."));
+  section.appendChild(help);
+  const grid = el("div", "cards");
+  for (const o of options) {
+    const card = el("article", `card band-${o.band}`);
+    card.appendChild(el("h3", "", o.label));
+    card.appendChild(el("p", "big", `~${Math.round(o.co2e_kg)} kg CO₂e`));
+    card.appendChild(el("span", "badge", BAND_TEXT[o.band] || o.band));  // colour is never the only signal
+    if (o.distance_km) card.appendChild(el("p", "small", `${o.distance_km} km`));
+    card.appendChild(el("p", "small", `Source: ${o.source}`));
+    grid.appendChild(card);
+  }
+  section.appendChild(grid);
+  add(section);
+}
+
+function hotelCarousel(data) {
+  const section = panel(`Hotels near ${data.station}`);
+  const track = el("div", "carousel");
+  track.setAttribute("role", "list");
+  track.tabIndex = 0;  // keyboard users can scroll it with the arrow keys
+  for (const h of data.hotels || []) {
+    const card = el("article", h.certification ? "card certified" : "card");
+    card.setAttribute("role", "listitem");
+    card.appendChild(el("h3", "", h.name));
+    if (h.distance_m !== null && h.distance_m !== undefined)
+      card.appendChild(el("p", "small", `🚶 ${h.distance_m} m from the station`));
+    card.appendChild(el("p", "", h.certification
+      ? `✅ ${h.certification.certification} (verified ${h.certification.checked_on})`
+      : "Certification not verified"));
+    if (h.wheelchair === "yes") card.appendChild(el("p", "small", "♿ Wheelchair accessible"));
+    else if (h.wheelchair === "limited") card.appendChild(el("p", "small", "♿ Limited wheelchair access"));
+    if (h.stars) card.appendChild(el("p", "small", `${h.stars}★`));
+    card.appendChild(el("p", "small", `Score ${h.score}/100`));
+    if (h.website) {
+      const link = el("a", "", "Hotel website ↗");
+      link.href = h.website; link.target = "_blank"; link.rel = "noopener noreferrer";
+      card.appendChild(link);
+    }
+    track.appendChild(card);
+  }
+  section.appendChild(track);
+  section.appendChild(el("p", "small", `Assuming ${data.nights} nights · Hotel data © OpenStreetMap contributors`));
+  add(section);
+}
+
+function offsetCards(programmes) {
+  const section = panel("Recognised carbon offset programmes");
+  const grid = el("div", "cards");
+  for (const p of programmes) {
+    const card = el("article", "card");
+    card.appendChild(el("h3", "", p.name));
+    card.appendChild(el("p", "small", `${p.type} · ${p.standard}`));
+    const link = el("a", "", "Visit website ↗");
+    link.href = p.url; link.target = "_blank"; link.rel = "noopener noreferrer";
+    card.appendChild(link);
+    if (p.checked_on) card.appendChild(el("p", "small", `Checked ${p.checked_on}`));
+    grid.appendChild(card);
+  }
+  section.appendChild(grid);
+  add(section);
+}
+
+function showHandover(data) {
+  if (!data.active) return;
+  banner.textContent = "";
+  banner.appendChild(el("span", "",
+    `👤 A human travel advisor is taking over (ticket ${data.ticket_id}). They can see your trip details and this chat.`));
+  const back = el("button", "banner-btn", "Back to the virtual assistant");
+  back.type = "button";
+  back.addEventListener("click", clearHandover);
+  banner.appendChild(back);
+  banner.hidden = false;           // role="status" makes screen readers announce it
+  statusEl.textContent = "👤 Human advisor";
+}
+
+function clearHandover() {
+  banner.hidden = true;
+  statusEl.textContent = "🤖 Virtual assistant";
+}
+document.getElementById("composer").addEventListener("submit", event => {
+  event.preventDefault();          // stop the browser reloading the page
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = "";
+  send(text, text);
+});
+
+document.getElementById("restart").addEventListener("click", () => {
+  senderId = crypto.randomUUID();
+  log.innerHTML = "";
+  clearHandover();
+  send("hello");
+});
+
+// Optional voice input (Web Speech API) - the 🎤 button only appears if the browser supports it
+const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+if (Recognition) {
+  const mic = document.getElementById("mic");
+  const recognition = new Recognition();
+  recognition.lang = "en-GB";
+  recognition.interimResults = false;
+  mic.hidden = false;
+  mic.addEventListener("click", () => { mic.setAttribute("aria-pressed", "true"); recognition.start(); });
+  recognition.addEventListener("result", e => { input.value = e.results[0][0].transcript; input.focus(); });
+  recognition.addEventListener("end", () => mic.setAttribute("aria-pressed", "false"));
+}
+
+send("hello");  // open with the greeting
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.env
+models/
+.rasa/
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+handover_queue/
+models_split/
+train_test_split/
+.pytest_cache/
+*.log

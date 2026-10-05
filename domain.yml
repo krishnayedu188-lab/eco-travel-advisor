@@ -1,0 +1,166 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - plan_trip
+  - inform
+  - request_human
+  - ask_offsets
+  - out_of_scope
+
+entities:
+  - destination
+  - origin
+  - city
+  - budget
+  - sustainability_level
+
+slots:
+  destination:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: destination
+      - type: from_entity
+        entity: city
+        conditions:
+          - active_loop: trip_form
+            requested_slot: destination
+      - type: from_text
+        not_intent: request_human
+        conditions:
+          - active_loop: trip_form
+            requested_slot: destination
+
+  origin:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: origin
+      - type: from_entity
+        entity: city
+        conditions:
+          - active_loop: trip_form
+            requested_slot: origin
+      - type: from_text
+        not_intent: request_human
+        conditions:
+          - active_loop: trip_form
+            requested_slot: origin
+
+
+
+  travel_dates:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        not_intent: request_human
+        conditions:
+          - active_loop: trip_form
+            requested_slot: travel_dates
+
+  budget:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: budget
+        conditions:
+          - active_loop: trip_form
+            requested_slot: budget
+      - type: from_text
+        not_intent: request_human
+        conditions:
+          - active_loop: trip_form
+            requested_slot: budget
+
+  sustainability_level:
+    type: categorical
+    values: [low, medium, high]
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: sustainability_level
+
+  carbon_options:
+    type: any
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  hotel_options:
+    type: any
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  recommended_transport:
+    type: any
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  handover_ticket:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+forms:
+  trip_form:
+    required_slots:
+      - destination
+      - origin
+      - travel_dates
+      - budget
+      - sustainability_level
+
+actions:
+  - validate_trip_form
+  - action_ask_destination
+  - action_ask_budget
+  - action_ask_sustainability_level
+  - action_calculate_carbon
+  - action_recommend_options
+  - action_reset_trip
+  - action_handover
+  - action_default_fallback
+  - action_offset_info
+
+responses:
+  utter_greet:
+    - text: "Hi! 🌍 I'm your Eco-Travel Advisor. I help you plan trips with a smaller carbon footprint."
+      buttons:
+        - title: "Plan a trip"
+          payload: "/plan_trip"
+        - title: "Talk to a human"
+          payload: "/request_human"
+
+  utter_ask_origin:
+    - text: "Where will you be travelling from?"
+
+  utter_ask_travel_dates:
+    - text: "When are you travelling? (e.g. 12–15 November)"
+
+  utter_trip_summary:
+    - text: "Great! Here's your trip: {origin} → {destination}, {travel_dates}, budget €{budget}, sustainability: {sustainability_level}. Let me check the carbon footprint… 🔍"
+
+  utter_handover:
+    - text: "I'm connecting you to a human travel advisor 👤"
+
+  utter_goodbye:
+    - text: "Have a great, green trip! 🌍"
+
+  utter_iamabot:
+    - text: "I'm an AI assistant built with Rasa. You can ask for a human advisor at any time."
+  utter_continue_trip:
+    - text: "Hi again! 🙂 Let's carry on with your trip."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

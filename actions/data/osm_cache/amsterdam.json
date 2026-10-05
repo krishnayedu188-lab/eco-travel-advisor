@@ -1,0 +1,474 @@
+[
+ {
+  "name": "Sint Nicolaas",
+  "distance_m": 391,
+  "stars": null,
+  "website": null,
+  "wheelchair": "yes",
+  "osm_id": "node/237892288"
+ },
+ {
+  "name": "WestCord City Center",
+  "distance_m": 538,
+  "stars": null,
+  "website": null,
+  "wheelchair": "yes",
+  "osm_id": "node/237898651"
+ },
+ {
+  "name": "The Highlander",
+  "distance_m": 662,
+  "stars": null,
+  "website": "https://www.thehighlanderhotel.com/nl/hotel-citadel-is-the-highlander",
+  "wheelchair": null,
+  "osm_id": "node/237904890"
+ },
+ {
+  "name": "INK Hotel Amsterdam",
+  "distance_m": 641,
+  "stars": null,
+  "website": null,
+  "wheelchair": "yes",
+  "osm_id": "node/237904893"
+ },
+ {
+  "name": "Park Plaza Victoria Hotel",
+  "distance_m": 270,
+  "stars": null,
+  "website": "https://www.parkplazavictoriaamsterdam.nl/",
+  "wheelchair": null,
+  "osm_id": "node/237912528"
+ },
+ {
+  "name": "Kimpton De Witt Hotel",
+  "distance_m": 392,
+  "stars": null,
+  "website": "https://www.kimptondewitthotel.com/en/",
+  "wheelchair": "yes",
+  "osm_id": "node/237912534"
+ },
+ {
+  "name": "Avenue Hotel",
+  "distance_m": 472,
+  "stars": "3",
+  "website": "https://avenue-hotel.nl",
+  "wheelchair": "yes",
+  "osm_id": "node/237912539"
+ },
+ {
+  "name": "NH Collection Amsterdam Barbizon Palace",
+  "distance_m": 297,
+  "stars": "5",
+  "website": "https://www.nh-hotels.com/",
+  "wheelchair": "yes",
+  "osm_id": "node/251127911"
+ },
+ {
+  "name": "De Oranje Tulp",
+  "distance_m": 421,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/251147173"
+ },
+ {
+  "name": "Van Gelder",
+  "distance_m": 432,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/251147174"
+ },
+ {
+  "name": "Hotel Continental",
+  "distance_m": 462,
+  "stars": null,
+  "website": "https://hotelcontinentalamsterdam.nl/",
+  "wheelchair": "no",
+  "osm_id": "node/251147177"
+ },
+ {
+  "name": "Hotel Manofa",
+  "distance_m": 506,
+  "stars": "1",
+  "website": "https://www.manofa-hotel.com/",
+  "wheelchair": null,
+  "osm_id": "node/251147179"
+ },
+ {
+  "name": "De Roode Leeuw",
+  "distance_m": 754,
+  "stars": "4",
+  "website": "https://www.hotelamsterdam.nl/",
+  "wheelchair": "no",
+  "osm_id": "node/251149361"
+ },
+ {
+  "name": "Swissôtel",
+  "distance_m": 775,
+  "stars": "4",
+  "website": "https://www.swissotel.com/hotels/amsterdam/",
+  "wheelchair": "limited",
+  "osm_id": "node/251149366"
+ },
+ {
+  "name": "Anantara Grand Hotel Krasnapolsky",
+  "distance_m": 814,
+  "stars": "5",
+  "website": "https://www.anantara.com/en/grand-hotel-krasnapolsky-amsterdam",
+  "wheelchair": "yes",
+  "osm_id": "node/251150450"
+ },
+ {
+  "name": "Torenzicht",
+  "distance_m": 745,
+  "stars": "1",
+  "website": "https://www.hoteltorenzicht.com/",
+  "wheelchair": "no",
+  "osm_id": "node/251187547"
+ },
+ {
+  "name": "Cordial",
+  "distance_m": 1077,
+  "stars": null,
+  "website": null,
+  "wheelchair": "no",
+  "osm_id": "node/251528285"
+ },
+ {
+  "name": "Hotel Rokin",
+  "distance_m": 1057,
+  "stars": null,
+  "website": null,
+  "wheelchair": "no",
+  "osm_id": "node/251528289"
+ },
+ {
+  "name": "The Grand",
+  "distance_m": 947,
+  "stars": "5",
+  "website": "https://www.sofitel-legend-thegrand.com",
+  "wheelchair": "yes",
+  "osm_id": "node/318453539"
+ },
+ {
+  "name": "Ibis",
+  "distance_m": 1092,
+  "stars": "3",
+  "website": "https://www.ibis.com/nl/hotel-3044-ibis-amsterdam-centre-stopera/index.shtml#overview",
+  "wheelchair": "limited",
+  "osm_id": "node/441674929"
+ },
+ {
+  "name": "Rembrandtplein Hotel",
+  "distance_m": 1131,
+  "stars": null,
+  "website": "https://rembrandtpleinhotel.nl/",
+  "wheelchair": "no",
+  "osm_id": "node/496436641"
+ },
+ {
+  "name": "Arrive",
+  "distance_m": 531,
+  "stars": null,
+  "website": "https://quentinarrive.com",
+  "wheelchair": "no",
+  "osm_id": "node/558302942"
+ },
+ {
+  "name": "Renaissance Amsterdam Hotel",
+  "distance_m": 415,
+  "stars": null,
+  "website": "https://www.RenaissanceAmsterdam.com",
+  "wheelchair": "no",
+  "osm_id": "node/561326544"
+ },
+ {
+  "name": "The Hoxton",
+  "distance_m": 1194,
+  "stars": null,
+  "website": "https://thehoxton.com/amsterdam/herengracht/",
+  "wheelchair": null,
+  "osm_id": "node/603367748"
+ },
+ {
+  "name": "Rho Hotel",
+  "distance_m": 877,
+  "stars": null,
+  "website": "https://www.rhohotel.com/",
+  "wheelchair": "limited",
+  "osm_id": "node/614686062"
+ },
+ {
+  "name": "Old Quarter",
+  "distance_m": 363,
+  "stars": null,
+  "website": "https://www.oldquarter.com/",
+  "wheelchair": "limited",
+  "osm_id": "node/673546620"
+ },
+ {
+  "name": "Old Nickel",
+  "distance_m": 314,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/684259210"
+ },
+ {
+  "name": "Hotel Damsquare",
+  "distance_m": 864,
+  "stars": null,
+  "website": "https://www.hotel-damsquare.com/nl",
+  "wheelchair": null,
+  "osm_id": "node/835847688"
+ },
+ {
+  "name": "Radisson BLU Hotel",
+  "distance_m": 1024,
+  "stars": "4",
+  "website": "https://www.radissonblu.com/de/hotel-amsterdam",
+  "wheelchair": "yes",
+  "osm_id": "node/1083682481"
+ },
+ {
+  "name": "Hotel CC",
+  "distance_m": 406,
+  "stars": "3",
+  "website": "http://www.hotelcc.nl",
+  "wheelchair": "limited",
+  "osm_id": "node/1350845699"
+ },
+ {
+  "name": "Hotel & Bar 55",
+  "distance_m": 443,
+  "stars": null,
+  "website": null,
+  "wheelchair": "yes",
+  "osm_id": "node/1519491735"
+ },
+ {
+  "name": "Amrath Hotel",
+  "distance_m": 572,
+  "stars": "5",
+  "website": "https://www.amrathamsterdam.nl",
+  "wheelchair": null,
+  "osm_id": "node/1714609972"
+ },
+ {
+  "name": "Hotel Royal Taste",
+  "distance_m": 625,
+  "stars": null,
+  "website": "https://www.hotelroyaltaste.nl/",
+  "wheelchair": null,
+  "osm_id": "node/1741487897"
+ },
+ {
+  "name": "Dam Square Inn",
+  "distance_m": 752,
+  "stars": null,
+  "website": "https://bestwesterndamsquareinn.com/",
+  "wheelchair": null,
+  "osm_id": "node/1886938081"
+ },
+ {
+  "name": "Die Port van Cleve",
+  "distance_m": 864,
+  "stars": null,
+  "website": "https://www.dieportvancleve.com/",
+  "wheelchair": null,
+  "osm_id": "node/2161457972"
+ },
+ {
+  "name": "The Times",
+  "distance_m": 872,
+  "stars": null,
+  "website": "https://thetimeshotel.nl/nl/",
+  "wheelchair": null,
+  "osm_id": "node/2261724827"
+ },
+ {
+  "name": "art'otel",
+  "distance_m": 268,
+  "stars": null,
+  "website": "https://artotelamsterdam.com/",
+  "wheelchair": "limited",
+  "osm_id": "node/2439059375"
+ },
+ {
+  "name": "Bed & Breakfast of Art",
+  "distance_m": 810,
+  "stars": null,
+  "website": "https://eatbu.nl/bed-and-breakfast-of-art-netherlands",
+  "wheelchair": null,
+  "osm_id": "node/2721294421"
+ },
+ {
+  "name": "Sebastian's",
+  "distance_m": 706,
+  "stars": null,
+  "website": "https://www.hotelsebastians.nl/",
+  "wheelchair": null,
+  "osm_id": "node/2721354834"
+ },
+ {
+  "name": "The Toren",
+  "distance_m": 1037,
+  "stars": null,
+  "website": "https://www.pavilionshotels.com/amsterdam/thetoren/",
+  "wheelchair": null,
+  "osm_id": "node/2721355260"
+ },
+ {
+  "name": "´t Hotel",
+  "distance_m": 994,
+  "stars": null,
+  "website": "https://thotel.nl/",
+  "wheelchair": null,
+  "osm_id": "node/2721355412"
+ },
+ {
+  "name": "Multatuli",
+  "distance_m": 323,
+  "stars": null,
+  "website": "https://multatulihotel.nl/",
+  "wheelchair": "no",
+  "osm_id": "node/2721519344"
+ },
+ {
+  "name": "Hotel Plant",
+  "distance_m": 310,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/2721520536"
+ },
+ {
+  "name": "Singel Hotel",
+  "distance_m": 497,
+  "stars": null,
+  "website": "https://www.singelhotel.nl/",
+  "wheelchair": "no",
+  "osm_id": "node/2721521232"
+ },
+ {
+  "name": "Season Star",
+  "distance_m": 302,
+  "stars": null,
+  "website": "http://www.seasonstar.com/",
+  "wheelchair": null,
+  "osm_id": "node/2721521294"
+ },
+ {
+  "name": "Hotel Canalview",
+  "distance_m": 446,
+  "stars": null,
+  "website": "https://hotelcanalview.nl/",
+  "wheelchair": null,
+  "osm_id": "node/2721522215"
+ },
+ {
+  "name": "Hotel Tourist INN",
+  "distance_m": 634,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/2721522835"
+ },
+ {
+  "name": "Hotel The Craftsmen",
+  "distance_m": 662,
+  "stars": null,
+  "website": "https://hotelthecraftsmen.com/",
+  "wheelchair": null,
+  "osm_id": "node/2721523192"
+ },
+ {
+  "name": "Hotel Jimmy",
+  "distance_m": 316,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/2721771397"
+ },
+ {
+  "name": "Delta Hotel",
+  "distance_m": 472,
+  "stars": null,
+  "website": "https://www.delta-hotel.nl/",
+  "wheelchair": null,
+  "osm_id": "node/2721772661"
+ },
+ {
+  "name": "Sharm Hotel",
+  "distance_m": 1151,
+  "stars": "2",
+  "website": "http://www.sharmhotel.nl",
+  "wheelchair": null,
+  "osm_id": "node/2721943212"
+ },
+ {
+  "name": "Hotel de Westertoren",
+  "distance_m": 1154,
+  "stars": "2",
+  "website": "https://www.hotelwestertoren.nl",
+  "wheelchair": null,
+  "osm_id": "node/2721944405"
+ },
+ {
+  "name": "Soho House",
+  "distance_m": 1084,
+  "stars": null,
+  "website": "https://www.sohohouseamsterdam.com/",
+  "wheelchair": "no",
+  "osm_id": "node/2722208772"
+ },
+ {
+  "name": "Hotel V Nesplein",
+  "distance_m": 1014,
+  "stars": null,
+  "website": "https://nesplein.hotelv.com/",
+  "wheelchair": "yes",
+  "osm_id": "node/2724250256"
+ },
+ {
+  "name": "Hotel Ben",
+  "distance_m": 530,
+  "stars": "1",
+  "website": "https://www.hotelben.nl",
+  "wheelchair": null,
+  "osm_id": "node/2724284462"
+ },
+ {
+  "name": "Travel Hotel Amsterdam",
+  "distance_m": 535,
+  "stars": null,
+  "website": "http://www.travelhotel-amsterdam.com",
+  "wheelchair": null,
+  "osm_id": "node/2724284533"
+ },
+ {
+  "name": "Hotel Doria",
+  "distance_m": 844,
+  "stars": null,
+  "website": "https://www.hoteldoria.nl/",
+  "wheelchair": "no",
+  "osm_id": "node/2724284858"
+ },
+ {
+  "name": "Frisco Inn",
+  "distance_m": 489,
+  "stars": null,
+  "website": "https://frisco.tripcombined.com/",
+  "wheelchair": null,
+  "osm_id": "node/2724285537"
+ },
+ {
+  "name": "Prins Hendrik",
+  "distance_m": 291,
+  "stars": null,
+  "website": "https://www.hotel-prinshendrik.nl",
+  "wheelchair": "yes",
+  "osm_id": "node/2724317786"
+ }
+]

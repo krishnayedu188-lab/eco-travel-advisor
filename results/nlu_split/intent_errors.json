@@ -1,0 +1,82 @@
+[
+  {
+    "text": "see you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.7360309362411499
+    }
+  },
+  {
+    "text": "sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9799200892448425
+    }
+  },
+  {
+    "text": "can I compensate my emissions",
+    "intent": "ask_offsets",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7441726922988892
+    }
+  },
+  {
+    "text": "I want to travel to Lisbon",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.9838168621063232
+    }
+  },
+  {
+    "text": "asdf",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.2698505222797394
+    }
+  },
+  {
+    "text": "???",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7047532200813293
+    }
+  },
+  {
+    "text": "xyz abc",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4018403887748718
+    }
+  },
+  {
+    "text": "Delhi",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9959573149681091
+    }
+  },
+  {
+    "text": "Vienna",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9920276999473572
+    }
+  },
+  {
+    "text": "Berlin",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9870923757553101
+    }
+  }
+]

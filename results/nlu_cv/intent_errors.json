@@ -1,0 +1,330 @@
+[
+  {
+    "text": "sure",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.40177807211875916
+    }
+  },
+  {
+    "text": "trip from Berlin to Prague",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999862909317017
+    }
+  },
+  {
+    "text": "Vienna",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9988077878952026
+    }
+  },
+  {
+    "text": "New York",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6717320084571838
+    }
+  },
+  {
+    "text": "Italy",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9314030408859253
+    }
+  },
+  {
+    "text": "transfer me to a travel specialist",
+    "intent": "request_human",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9789101481437683
+    }
+  },
+  {
+    "text": "hmm blah",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.39943191409111023
+    }
+  },
+  {
+    "text": "I like turtles",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9648094177246094
+    }
+  },
+  {
+    "text": "sing a song",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.22892814874649048
+    }
+  },
+  {
+    "text": "am I talking to a human?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.999897837638855
+    }
+  },
+  {
+    "text": "greetings",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5315617322921753
+    }
+  },
+  {
+    "text": "that's all for now",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.7752259373664856
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9980059266090393
+    }
+  },
+  {
+    "text": "I don't think so",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.44072225689888
+    }
+  },
+  {
+    "text": "I want to travel to Lisbon",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.9577119946479797
+    }
+  },
+  {
+    "text": "I'm travelling from Hamburg",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.8236317038536072
+    }
+  },
+  {
+    "text": "I want the greenest option",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "ask_offsets",
+      "confidence": 0.8993596434593201
+    }
+  },
+  {
+    "text": "Hamburg",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5080843567848206
+    }
+  },
+  {
+    "text": "can I compensate my emissions",
+    "intent": "ask_offsets",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.8251713514328003
+    }
+  },
+  {
+    "text": "compensate CO2",
+    "intent": "ask_offsets",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.8170304894447327
+    }
+  },
+  {
+    "text": "blorp",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9248967170715332
+    }
+  },
+  {
+    "text": "lkjhg poiu",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.472055584192276
+    }
+  },
+  {
+    "text": "can you order me a pizza",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.5984863042831421
+    }
+  },
+  {
+    "text": "what's your favourite colour",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8945849537849426
+    }
+  },
+  {
+    "text": "are you a real person?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.9980535507202148
+    }
+  },
+  {
+    "text": "hi there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.4438241422176361
+    }
+  },
+  {
+    "text": "see you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.597574770450592
+    }
+  },
+  {
+    "text": "sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9593523740768433
+    }
+  },
+  {
+    "text": "not really",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.3040604293346405
+    }
+  },
+  {
+    "text": "help me plan an eco-friendly holiday",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.45991435647010803
+    }
+  },
+  {
+    "text": "I'm going to Amsterdam",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8159918785095215
+    }
+  },
+  {
+    "text": "I need a sustainable weekend break",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8157957792282104
+    }
+  },
+  {
+    "text": "Berlin",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9907534122467041
+    }
+  },
+  {
+    "text": "sustainability is very important to me",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.8738852739334106
+    }
+  },
+  {
+    "text": "somewhat important",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.5928063988685608
+    }
+  },
+  {
+    "text": "human please",
+    "intent": "request_human",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9915966391563416
+    }
+  },
+  {
+    "text": "asdf",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6419916152954102
+    }
+  },
+  {
+    "text": "qwerty",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3318839967250824
+    }
+  },
+  {
+    "text": "???",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.397490918636322
+    }
+  },
+  {
+    "text": "tell me a joke",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.8746559023857117
+    }
+  },
+  {
+    "text": "is this an AI?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9247941374778748
+    }
+  }
+]

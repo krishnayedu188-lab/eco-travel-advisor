@@ -1,0 +1,210 @@
+[
+ {
+  "name": "Garner Hotel Prinz Eugen",
+  "distance_m": 293,
+  "stars": "4",
+  "website": "https://www.novum-hotels.com/hotel-prinz-eugen-wien",
+  "wheelchair": null,
+  "osm_id": "node/466326272"
+ },
+ {
+  "name": "Cyrus",
+  "distance_m": 633,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/622469034"
+ },
+ {
+  "name": "Kolbeck",
+  "distance_m": 424,
+  "stars": null,
+  "website": "https://hotel-kolbeck.at/kontakt/",
+  "wheelchair": null,
+  "osm_id": "node/914795974"
+ },
+ {
+  "name": "Astral",
+  "distance_m": 709,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/922949548"
+ },
+ {
+  "name": "Caroline",
+  "distance_m": 846,
+  "stars": "3",
+  "website": "https://caroline-wien.at/",
+  "wheelchair": null,
+  "osm_id": "node/930759103"
+ },
+ {
+  "name": "Hotel-Pension Bosch",
+  "distance_m": 1027,
+  "stars": null,
+  "website": "http://www.hotelpensionbosch.com/",
+  "wheelchair": null,
+  "osm_id": "node/1852498914"
+ },
+ {
+  "name": "Four Points Flex by Sheraton",
+  "distance_m": 632,
+  "stars": null,
+  "website": "https://www.marriott.com/de/hotels/viehx-four-points-flex-vienna-hauptbahnhof/overview/",
+  "wheelchair": null,
+  "osm_id": "node/2457601784"
+ },
+ {
+  "name": "Zeitgeist Vienna",
+  "distance_m": 299,
+  "stars": null,
+  "website": "https://www.zeitgeist-vienna.com/",
+  "wheelchair": "yes",
+  "osm_id": "node/2678496326"
+ },
+ {
+  "name": "Hotel Rudy",
+  "distance_m": 535,
+  "stars": null,
+  "website": "https://mynext.at/hotel-rudy/",
+  "wheelchair": "limited",
+  "osm_id": "node/3737742725"
+ },
+ {
+  "name": "Novum Hotel Congress Wien",
+  "distance_m": 266,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/4239914891"
+ },
+ {
+  "name": "Hostel Wieden",
+  "distance_m": 1118,
+  "stars": null,
+  "website": null,
+  "wheelchair": null,
+  "osm_id": "node/5009474781"
+ },
+ {
+  "name": "Ibis Wien Hauptbahnhof",
+  "distance_m": 88,
+  "stars": null,
+  "website": "https://all.accor.com/hotel/8564/index.de.shtml",
+  "wheelchair": "yes",
+  "osm_id": "node/5584099525"
+ },
+ {
+  "name": "Novotel Wien Hauptbahnhof",
+  "distance_m": 117,
+  "stars": "4",
+  "website": "https://www.novotel-wien-hauptbahnhof.com/",
+  "wheelchair": "yes",
+  "osm_id": "node/5584105769"
+ },
+ {
+  "name": "Adina Apartment Hotel Vienna Belvedere",
+  "distance_m": 307,
+  "stars": null,
+  "website": "https://www.adinahotels.com/de/apartments/vienna-belvedere/",
+  "wheelchair": "yes",
+  "osm_id": "node/8531461517"
+ },
+ {
+  "name": "Pakat City Hotel",
+  "distance_m": 775,
+  "stars": "3",
+  "website": "https://clima-cityhotel.viennaaustrohotel.com",
+  "wheelchair": "yes",
+  "osm_id": "node/9520639483"
+ },
+ {
+  "name": "Gegenbauer",
+  "distance_m": 922,
+  "stars": null,
+  "website": "https://www.gegenbauer.at",
+  "wheelchair": null,
+  "osm_id": "node/10716643969"
+ },
+ {
+  "name": "SMARTments business WIEN HAUPTBAHNHOF",
+  "distance_m": 190,
+  "stars": null,
+  "website": "https://www.smartments-business.de/standorte/wien/",
+  "wheelchair": null,
+  "osm_id": "node/12629145111"
+ },
+ {
+  "name": "Premier Inn Wien City Hauptbahnhof",
+  "distance_m": 213,
+  "stars": "4",
+  "website": "https://www.premierinn.com/de/de/hotels/oesterreich/wien.html",
+  "wheelchair": "yes",
+  "osm_id": "way/77723410"
+ },
+ {
+  "name": "Daniel",
+  "distance_m": 607,
+  "stars": null,
+  "website": "https://hoteldaniel.com/de/wien/",
+  "wheelchair": "yes",
+  "osm_id": "way/136507951"
+ },
+ {
+  "name": "Lindner Hotel am Belvedere",
+  "distance_m": 1220,
+  "stars": null,
+  "website": "https://www.lindner.de/de/LHAB",
+  "wheelchair": "yes",
+  "osm_id": "way/154803939"
+ },
+ {
+  "name": "Motel One Hauptbahnhof",
+  "distance_m": 161,
+  "stars": null,
+  "website": "https://www.motel-one.com/",
+  "wheelchair": "yes",
+  "osm_id": "way/274962561"
+ },
+ {
+  "name": "Hotel Schani Wien Hauptbahnhof",
+  "distance_m": 369,
+  "stars": null,
+  "website": "https://www.schanihotels.com/hotels/hotel-schani-wien-hauptbahnhof",
+  "wheelchair": "yes",
+  "osm_id": "way/319342087"
+ },
+ {
+  "name": "Leonardo Hotel Vienna Hauptbahnhof",
+  "distance_m": 197,
+  "stars": null,
+  "website": "https://www.leonardo-hotels.com/vienna/leonardo-hotel-vienna-hauptbahnhof",
+  "wheelchair": "yes",
+  "osm_id": "way/319475763"
+ },
+ {
+  "name": "B&B Hotel Wien-Hbf",
+  "distance_m": 587,
+  "stars": null,
+  "website": "https://www.hotel-bb.com/de/hotel/wien-hbf",
+  "wheelchair": "yes",
+  "osm_id": "way/612294953"
+ },
+ {
+  "name": "MOOONS",
+  "distance_m": 283,
+  "stars": null,
+  "website": null,
+  "wheelchair": "yes",
+  "osm_id": "way/854024882"
+ },
+ {
+  "name": "Prizeotel Wien City",
+  "distance_m": 382,
+  "stars": null,
+  "website": "https://www.prizeotel.com/de/hotel-wien",
+  "wheelchair": "yes",
+  "osm_id": "way/868741780"
+ }
+]

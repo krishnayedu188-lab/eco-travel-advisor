@@ -1,0 +1,92 @@
+version: "3.1"
+
+rules:
+- rule: Greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Start the trip form (clear any old trip first)
+  steps:
+  - intent: plan_trip
+  - action: action_reset_trip
+  - action: trip_form
+  - active_loop: trip_form
+
+- rule: Submit the trip form
+  condition:
+  - active_loop: trip_form
+  steps:
+  - action: trip_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_trip_summary
+  - action: action_calculate_carbon
+  - action: action_recommend_options
+
+- rule: Human handover
+  steps:
+  - intent: request_human
+  - action: action_handover
+  - active_loop: null
+
+- rule: Human handover in the middle of the trip form (stops the form)
+  condition:
+  - active_loop: trip_form
+  steps:
+  - intent: request_human
+  - action: action_handover
+  - active_loop: null
+
+- rule: Fallback, stage 1 or 2 (outside the form)
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback
+
+- rule: Fallback during the trip form, then repeat the question
+  condition:
+  - active_loop: trip_form
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback
+  - action: trip_form
+  - active_loop: trip_form
+
+- rule: Carbon offsets
+  steps:
+  - intent: ask_offsets
+  - action: action_offset_info
+
+- rule: Out of scope (outside the form)
+  steps:
+  - intent: out_of_scope
+  - action: action_default_fallback
+
+- rule: Out of scope during the trip form, then repeat the question
+  condition:
+  - active_loop: trip_form
+  steps:
+  - intent: out_of_scope
+  - action: action_default_fallback
+  - action: trip_form
+  - active_loop: trip_form
+
+- rule: Greeting during the trip form, then continue the form
+  condition:
+  - active_loop: trip_form
+  steps:
+  - intent: greet
+  - action: utter_continue_trip
+  - action: trip_form
+  - active_loop: trip_form

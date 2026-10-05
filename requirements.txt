@@ -1,0 +1,6 @@
+rasa==3.6.21
+rasa-sdk==3.6.2
+python-dotenv
+requests
+packaging==20.9
+pytest<8

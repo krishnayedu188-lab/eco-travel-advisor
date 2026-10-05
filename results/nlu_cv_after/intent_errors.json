@@ -1,0 +1,290 @@
+[
+  {
+    "text": "I'm done",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9998113512992859
+    }
+  },
+  {
+    "text": "plan my weekend away",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.994818389415741
+    }
+  },
+  {
+    "text": "Rome please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.971433699131012
+    }
+  },
+  {
+    "text": "I want to go to Barcelona",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.7489634156227112
+    }
+  },
+  {
+    "text": "this time I want to go to Rome",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9316354990005493
+    }
+  },
+  {
+    "text": "Vienna",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.4463622570037842
+    }
+  },
+  {
+    "text": "how old are you",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.9631649255752563
+    }
+  },
+  {
+    "text": "do you like music",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.642108142375946
+    }
+  },
+  {
+    "text": "fix my computer",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9231339693069458
+    }
+  },
+  {
+    "text": "greetings",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.44431954622268677
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9881468415260315
+    }
+  },
+  {
+    "text": "I want to visit Rome next month",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999903440475464
+    }
+  },
+  {
+    "text": "I want the greenest option",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9946308135986328
+    }
+  },
+  {
+    "text": "sustainability is very important to me",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9838414192199707
+    }
+  },
+  {
+    "text": "somewhat important",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.4676259458065033
+    }
+  },
+  {
+    "text": "I don't mind emissions",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8072711229324341
+    }
+  },
+  {
+    "text": "Tokyo",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.56498783826828
+    }
+  },
+  {
+    "text": "Delhi",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9967754483222961
+    }
+  },
+  {
+    "text": "Italy",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.46615269780158997
+    }
+  },
+  {
+    "text": "how can I compensate my carbon footprint",
+    "intent": "ask_offsets",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.8451557159423828
+    }
+  },
+  {
+    "text": "recommend a movie",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8386482000350952
+    }
+  },
+  {
+    "text": "who is the president",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.41568079590797424
+    }
+  },
+  {
+    "text": "am I talking to a human?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.9999074935913086
+    }
+  },
+  {
+    "text": "are you a real person?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "request_human",
+      "confidence": 0.9987785220146179
+    }
+  },
+  {
+    "text": "goodbye",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9984055161476135
+    }
+  },
+  {
+    "text": "see you",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9177902340888977
+    }
+  },
+  {
+    "text": "I want to book a sustainable trip",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9688917994499207
+    }
+  },
+  {
+    "text": "I'd like to travel somewhere green",
+    "intent": "plan_trip",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8355348110198975
+    }
+  },
+  {
+    "text": "Paris",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.987335205078125
+    }
+  },
+  {
+    "text": "next month",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "plan_trip",
+      "confidence": 0.9930741786956787
+    }
+  },
+  {
+    "text": "transfer me to a travel specialist",
+    "intent": "request_human",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9216766953468323
+    }
+  },
+  {
+    "text": "offset options please",
+    "intent": "ask_offsets",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.620290219783783
+    }
+  },
+  {
+    "text": "what time is it",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9995121955871582
+    }
+  },
+  {
+    "text": "bananas",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9991217255592346
+    }
+  },
+  {
+    "text": "lorem ipsum",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9972934126853943
+    }
+  },
+  {
+    "text": "is this an AI?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9640084505081177
+    }
+  }
+]

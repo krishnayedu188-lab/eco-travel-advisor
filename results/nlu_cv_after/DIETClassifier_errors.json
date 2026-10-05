@@ -1,0 +1,442 @@
+[
+  {
+    "text": "I'm done",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sustainability_level",
+        "start": 4,
+        "end": 8,
+        "confidence_entity": 0.7798999547958374,
+        "value": "done",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "planning a trip to Paris",
+    "entities": [
+      {
+        "start": 19,
+        "end": 24,
+        "value": "Paris",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "origin",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.984899640083313,
+        "value": "Paris",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Rome please",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Rome",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "destination",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9865800738334656,
+        "value": "Rome",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I'm travelling from Hamburg",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "Hamburg",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want to go to Barcelona",
+    "entities": [
+      {
+        "start": 16,
+        "end": 25,
+        "value": "Barcelona",
+        "entity": "destination"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "1000 euros max",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "1000",
+        "entity": "budget"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Hamburg",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Hamburg",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Vienna",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Vienna",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "New York",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "New York",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "from India",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "India",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 5,
+        "end": 10,
+        "confidence_entity": 0.9950242638587952,
+        "value": "India",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "12 to 15 November",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "budget",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9052883386611938,
+        "value": "12",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "budget",
+        "start": 6,
+        "end": 8,
+        "confidence_entity": 0.8345352411270142,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want the greenest option",
+    "entities": [
+      {
+        "start": 11,
+        "end": 19,
+        "value": "high",
+        "entity": "sustainability_level"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "sustainability is very important to me",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "value": "high",
+        "entity": "sustainability_level"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "somewhat important",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "medium",
+        "entity": "sustainability_level"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I don't mind emissions",
+    "entities": [
+      {
+        "start": 2,
+        "end": 12,
+        "value": "low",
+        "entity": "sustainability_level"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "20 to 23 december",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "budget",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.8914337158203125,
+        "value": "20",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "budget",
+        "start": 6,
+        "end": 8,
+        "confidence_entity": 0.6957113146781921,
+        "value": "23",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tokyo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Tokyo",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Delhi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Delhi",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Italy",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Italy",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Dubai",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Dubai",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'd like to travel somewhere green",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sustainability_level",
+        "start": 19,
+        "end": 28,
+        "confidence_entity": 0.6830401420593262,
+        "value": "somewhere",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "sustainability_level",
+        "start": 29,
+        "end": 34,
+        "confidence_entity": 0.8325332999229431,
+        "value": "green",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Paris",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Paris",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "destination",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9749709367752075,
+        "value": "Paris",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "leaving from Cologne",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "Cologne",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm coming from Munich",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "Munich",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "starting in Paris",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "Paris",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "destination",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.9968124032020569,
+        "value": "Paris",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "India",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "India",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "origin",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9421126842498779,
+        "value": "India",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I live in Bangalore",
+    "entities": [
+      {
+        "start": 10,
+        "end": 19,
+        "value": "Bangalore",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm based in Toronto",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "Toronto",
+        "entity": "origin"
+      }
+    ],
+    "predicted_entities": []
+  }
+]
